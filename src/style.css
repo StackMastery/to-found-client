@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --radius: 0.5rem
+  }
+}
+
+html {
+  overflow-y: scroll;
+}
+
+*{
+  outline: none;
+}
+
+.swiperWidth{
+  max-width: 1400px;
+}
+.au {
+  position: relative; /* Required for the ::after positioning */
+  display: inline-block; /* Ensures the ::after spans the text only */
+}
+
+.au::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px; /* Adjust thickness of the underline */
+  background-color: currentColor; /* Match the text color */
+  transition: width 0.3s ease-in-out;
+}
+
+.au:hover::after {
+  width: 100%; /* Expands underline across the full width of the text */
+}
+
+.htmlShowcase{
+  h2,h3,p{
+    padding: 7px 0 !important;
+  }
+}
+#editor{ 
+  div{
+    overflow-y: auto;
+    height: 300px !important;
+    font-size: 14px;
+    h2,h3,p,span{
+      padding: 5px 0;
+    }
+    h2 {
+      font-size: 1.2rem !important;
+    }
+
+    h3 {
+      font-size: 1.1rem !important;
+    }
+    h4,
+    h5,
+    h6 {
+      font-size: 1rem !important;
+    }
+
+    /* Code and preformatted text styles */
+    code {
+      font-size: 0.85rem !important;
+    }
+
+    pre {
+      code {
+        font-size: 0.8rem !important;
+      }
+    }
+  }
+}
