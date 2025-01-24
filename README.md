@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-    <a href="https://youtu.be/B91wc5dCEBA" target="_blank">
+    <a>
       <img src="https://res.cloudinary.com/dhuydj1lg/image/upload/v1735123285/Group_3-svg_su06qq.svg" alt="Project Banner">
     </a>
   <br />
