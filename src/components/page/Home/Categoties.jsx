@@ -9,7 +9,7 @@ const Categoties = () => {
     <>
       <section className="flex justify-center py-20 pt-40">
         <div className="w-primary inline-flex justify-center px-5 gap-10 items-center flex-col-reverse md:flex-row">
-          <div className="w-full md:w-6/12 flex justify-center pt-10 md:pt-0">
+          <div className="w-full h md:w-6/12 flex justify-center pt-10 md:pt-0">
             <CardStack items={REVIEWS} />
           </div>
           <div className="w-full md:w-6/12 space-y-8">
