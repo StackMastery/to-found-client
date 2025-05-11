@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import * as React from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { DayPicker } from "react-day-picker";
@@ -13,6 +14,27 @@ function Calendar({ className, classNames, showOutsideDays = true, ...props }) {
       classNames={{
         months:
           "flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0  ",
+=======
+import * as React from "react"
+import { ChevronLeft, ChevronRight } from "lucide-react"
+import { DayPicker } from "react-day-picker"
+
+import { cn } from "@/lib/utils"
+import { buttonVariants } from "@/components/ui/button"
+
+function Calendar({
+  className,
+  classNames,
+  showOutsideDays = true,
+  ...props
+}) {
+  return (
+    (<DayPicker
+      showOutsideDays={showOutsideDays}
+      className={cn("p-3", className)}
+      classNames={{
+        months: "flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0",
+>>>>>>> 2946a9bc95fa3b1e28333295a71c1f7472d717f5
         month: "space-y-4",
         caption: "flex justify-center pt-1 relative items-center",
         caption_label: "text-sm font-medium",
@@ -36,8 +58,12 @@ function Calendar({ className, classNames, showOutsideDays = true, ...props }) {
         day_range_end: "day-range-end",
         day_selected:
           "bg-neutral-900 text-neutral-50 hover:bg-neutral-900 hover:text-neutral-50 focus:bg-neutral-900 focus:text-neutral-50 dark:bg-neutral-50 dark:text-neutral-900 dark:hover:bg-neutral-50 dark:hover:text-neutral-900 dark:focus:bg-neutral-50 dark:focus:text-neutral-900",
+<<<<<<< HEAD
         day_today:
           "bg-neutral-100 text-neutral-900 dark:bg-neutral-800 dark:text-neutral-50",
+=======
+        day_today: "bg-neutral-100 text-neutral-900 dark:bg-neutral-800 dark:text-neutral-50",
+>>>>>>> 2946a9bc95fa3b1e28333295a71c1f7472d717f5
         day_outside:
           "day-outside text-neutral-500 aria-selected:bg-neutral-100/50 aria-selected:text-neutral-500 dark:text-neutral-400 dark:aria-selected:bg-neutral-800/50 dark:aria-selected:text-neutral-400",
         day_disabled: "text-neutral-500 opacity-50 dark:text-neutral-400",
@@ -54,6 +80,7 @@ function Calendar({ className, classNames, showOutsideDays = true, ...props }) {
           <ChevronRight className={cn("h-4 w-4", className)} {...props} />
         ),
       }}
+<<<<<<< HEAD
       {...props}
     />
   );
@@ -61,3 +88,11 @@ function Calendar({ className, classNames, showOutsideDays = true, ...props }) {
 Calendar.displayName = "Calendar";
 
 export { Calendar };
+=======
+      {...props} />)
+  );
+}
+Calendar.displayName = "Calendar"
+
+export { Calendar }
+>>>>>>> 2946a9bc95fa3b1e28333295a71c1f7472d717f5

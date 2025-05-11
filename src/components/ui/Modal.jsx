@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Modal = ({ button, link, des, title, isOpen, setisOpen, children }) => {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2946a9bc95fa3b1e28333295a71c1f7472d717f5
   return (
     <AnimatePresence>
       {isOpen && (
@@ -11,17 +15,29 @@ const Modal = ({ button, link, des, title, isOpen, setisOpen, children }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
+<<<<<<< HEAD
           className="flex justify-center fixed w-full  bg-black/60 overflow-x-hidden top-0 z-[99999999]"
+=======
+          className="flex justify-center fixed w-full bg-black/60 overflow-x-hidden top-0 z-[99999999]"
+>>>>>>> 2946a9bc95fa3b1e28333295a71c1f7472d717f5
         >
           <div className="w-primary px-5 py-40 h-screen items-center inline-flex justify-center">
             <motion.div
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
+<<<<<<< HEAD
               exit={{ scale: 0.8 }}
               transition={{
                 stiffness: 200,
               }}
               className="bg-white dark:bg-black dark:border-white/20 border space-y-5 p-10 w-full md:w-9/12 lg:w-[400px] rounded-xl"
+=======
+              exit={{ scale: 0.8 }} 
+              transition={{
+                stiffness: 200,
+              }}
+              className="bg-white space-y-5 p-10 w-full md:w-9/12 lg:w-[400px] rounded-xl"
+>>>>>>> 2946a9bc95fa3b1e28333295a71c1f7472d717f5
             >
               <div className="flex justify-end -mr-5 -mt-5">
                 <IoMdClose
